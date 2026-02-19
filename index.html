@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORPLAN – ICT Division 2026 Work Plan</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Global Home Navigation Arrow -->
+    <div id="home-nav" class="home-nav" onclick="showSection('home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M19 12H5"></path>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Home</span>
+    </div>
+
+    <!-- SECTION: HOME -->
+    <section id="home" class="active">
+        <h1>CORPLAN – ICT Division 2026 Work Plan</h1>
+        <p>The 2026 ICT Work Plan is designed to strengthen system stability, support operational continuity, and
+            initiate phased modernization in a controlled and manageable manner.</p>
+        <button class="btn" onclick="showSection('key-focus-areas')">Enter Key Focus Areas</button>
+    </section>
+
+    <!-- SECTION: KEY FOCUS AREAS -->
+    <section id="key-focus-areas">
+        <h1>Key Focus Areas</h1>
+        <div class="grid">
+            <div class="card" onclick="showSection('erp')">
+                <div class="card-num">01</div>
+                <div class="card-text">Phased ERP Implementation (Initial Modules)</div>
+            </div>
+            <div class="card" onclick="showSection('infrastructure')">
+                <div class="card-num">02</div>
+                <div class="card-text">Infrastructure & Data Storage</div>
+            </div>
+            <div class="card" onclick="showSection('network')">
+                <div class="card-num">03</div>
+                <div class="card-text">Network & Connectivity Stability</div>
+            </div>
+            <div class="card" onclick="showSection('field-ops')">
+                <div class="card-num">04</div>
+                <div class="card-text">Field Operations Continuity</div>
+            </div>
+            <div class="card" onclick="showSection('disaster')">
+                <div class="card-num">05</div>
+                <div class="card-text">Disaster Communication Preparedness</div>
+            </div>
+            <div class="card" onclick="showSection('ict-capability')">
+                <div class="card-num">06</div>
+                <div class="card-text">ICT Capability Development</div>
+            </div>
+        </div>
+        <button class="btn btn-secondary" style="margin-top: 60px;" onclick="showSection('final')">General
+            Commitment</button>
+    </section>
+
+    <!-- SECTION: ERP -->
+    <section id="erp">
+        <h1>ERP & Core System Modernization (Phase 1)</h1>
+        <p>To begin the phased implementation of an Integrated Enterprise Resource Planning (ERP) system, starting with
+            selected core operational modules.</p>
+        <p>For 2026, the focus will be on:</p>
+        <ul>
+            <li>Billing System</li>
+            <li>Collection Monitoring</li>
+        </ul>
+        <p>This phased approach allows controlled implementation, proper evaluation, and risk mitigation before
+            expanding to other modules.</p>
+        <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+    </section>
+
+    <!-- SECTION: Infrastructure & Data Protection -->
+    <section id="infrastructure">
+        <h1>Infrastructure & Data Storage</h1>
+        <p>To strengthen system reliability through preventive maintenance and structured data storage management.</p>
+        <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+    </section>
+
+    <!-- SECTION: Network & Connectivity Stability -->
+    <section id="network">
+        <h1>Network & Connectivity Stability</h1>
+        <p>To maintain stable internal and inter-office connectivity to support operational processes.</p>
+        <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+    </section>
+
+    <!-- SECTION: Field Operations Continuity -->
+    <section id="field-ops">
+        <h1>Field Operations Continuity</h1>
+        <p>To maintain uninterrupted support for meter reading and billing-related field activities.</p>
+        <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+    </section>
+
+    <!-- SECTION: Disaster Communication Preparedness -->
+    <section id="disaster">
+        <h1>Disaster Communication Preparedness</h1>
+        <p>To strengthen communication capability during major outages or emergency situations.</p>
+        <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+    </section>
+
+    <!-- SECTION: ICT Capability Development -->
+    <section id="ict-capability">
+        <h1>ICT Capability Development & Monitoring</h1>
+        <p>To gradually enhance internal ICT technical capability and monitoring support.</p>
+        <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+    </section>
+
+    <!-- SECTION: FINAL -->
+    <section id="final">
+        <div class="final-section">
+            <p>The ICT Division remains committed to supporting stable, reliable, and responsible technology operations
+                for QUIRELCO.</p>
+            <div class="thank-you">Thank you.</div>
+            <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
