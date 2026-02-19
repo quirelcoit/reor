@@ -73,50 +73,233 @@
     <!-- SECTION: ERP -->
     <section id="erp">
         <h1>ERP & Core System Modernization (Phase&nbsp;1)</h1>
-        <p>To begin the phased implementation of an Integrated Enterprise Resource Planning (ERP) system, starting with
-            selected core operational modules.</p>
-        <p>For 2026, the focus will be on:</p>
-        <ul>
-            <li>Billing System</li>
-            <li>Collection Monitoring</li>
-        </ul>
-        <p>This phased approach allows controlled implementation, proper evaluation, and risk mitigation before
-            expanding to other modules.</p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('erp', 'objective')">Objective</button>
+            <button class="tab-btn" onclick="switchTab('erp', 'workplan')">Work Plan</button>
+            <button class="tab-btn" onclick="switchTab('erp', 'approach')">Approach</button>
+            <button class="tab-btn" onclick="switchTab('erp', 'outcome')">Expected Outcome</button>
+            <button class="tab-btn" onclick="switchTab('erp', 'notes')">Notes</button>
+        </div>
+
+        <div id="erp-objective" class="tab-content active">
+            <p>To begin the phased implementation of an Integrated Enterprise Resource Planning (ERP) system, starting
+                with selected core operational modules.</p>
+            <p>For 2026, the focus will be on: <strong>Billing System</strong> and <strong>Collection
+                    Monitoring</strong>.</p>
+        </div>
+
+        <div id="erp-workplan" class="tab-content">
+            <ul>
+                <li>Initial deployment of ERP modules for Billing and Collection</li>
+                <li>Provisioning of a dedicated server environment for ERP operations</li>
+                <li>Monitoring and evaluation during the first phase of implementation</li>
+            </ul>
+        </div>
+
+        <div id="erp-approach" class="tab-content">
+            <ul>
+                <li>Phase 1: Billing & Collection modules</li>
+                <li>Assessment and stabilization period</li>
+                <li>Gradual consideration of additional modules subject to performance, operational readiness, and
+                    management direction</li>
+            </ul>
+        </div>
+
+        <div id="erp-outcome" class="tab-content">
+            <ul>
+                <li>Improved data consolidation within billing and collection processes</li>
+                <li>Better visibility of receivables and payment tracking</li>
+                <li>More structured reporting capability</li>
+                <li>Foundational step toward long-term system integration</li>
+            </ul>
+        </div>
+
+        <div id="erp-notes" class="tab-content">
+            <p>The ERP initiative will be implemented progressively, with adjustments as necessary based on operational
+                feedback and system performance.</p>
+        </div>
+
         <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
     </section>
 
-    <!-- SECTION: Infrastructure & Data Protection -->
+    <!-- SECTION: Infrastructure -->
     <section id="infrastructure">
         <h1>Infrastructure & Data Storage</h1>
-        <p>To strengthen system reliability through preventive maintenance and structured data storage management.</p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('infrastructure', 'objective')">Objective</button>
+            <button class="tab-btn" onclick="switchTab('infrastructure', 'workplan')">Work Plan</button>
+            <button class="tab-btn" onclick="switchTab('infrastructure', 'outcome')">Expected Outcome</button>
+            <button class="tab-btn" onclick="switchTab('infrastructure', 'notes')">Notes</button>
+        </div>
+
+        <div id="infrastructure-objective" class="tab-content active">
+            <p>To strengthen system reliability through preventive maintenance and structured data storage management.
+            </p>
+        </div>
+
+        <div id="infrastructure-workplan" class="tab-content">
+            <ul>
+                <li>Deployment of NAS storage for centralized backup management</li>
+                <li>Organized storage and safeguarding of ICT equipment</li>
+            </ul>
+        </div>
+
+        <div id="infrastructure-outcome" class="tab-content">
+            <ul>
+                <li>Reduced risk of data loss</li>
+                <li>Improved backup management practices</li>
+            </ul>
+        </div>
+
+        <div id="infrastructure-notes" class="tab-content">
+            <p>These measures are preventive in nature and are intended to minimize operational risk.</p>
+        </div>
+
         <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
     </section>
 
-    <!-- SECTION: Network & Connectivity Stability -->
+    <!-- SECTION: Network -->
     <section id="network">
         <h1>Network & Connectivity Stability</h1>
-        <p>To maintain stable internal and inter-office connectivity to support operational processes.</p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('network', 'objective')">Objective</button>
+            <button class="tab-btn" onclick="switchTab('network', 'workplan')">Work Plan</button>
+            <button class="tab-btn" onclick="switchTab('network', 'outcome')">Expected Outcome</button>
+            <button class="tab-btn" onclick="switchTab('network', 'notes')">Notes</button>
+        </div>
+
+        <div id="network-objective" class="tab-content active">
+            <p>To maintain stable internal and inter-office connectivity to support operational processes.</p>
+        </div>
+
+        <div id="network-workplan" class="tab-content">
+            <ul>
+                <li>Upgrade and maintenance of network switches and LAN components</li>
+                <li>Structured cabling and connector management</li>
+                <li>Support for internal display and communication systems</li>
+            </ul>
+        </div>
+
+        <div id="network-outcome" class="tab-content">
+            <ul>
+                <li>Improved internal network stability</li>
+                <li>More consistent inter-office connectivity</li>
+                <li>Better support for system-based operations</li>
+            </ul>
+        </div>
+
+        <div id="network-notes" class="tab-content">
+            <p>Network improvements are aimed at maintaining operational reliability and may be enhanced further as
+                needed.</p>
+        </div>
+
         <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
     </section>
 
-    <!-- SECTION: Field Operations Continuity -->
+    <!-- SECTION: Field Operations -->
     <section id="field-ops">
         <h1>Field Operations Continuity</h1>
-        <p>To maintain uninterrupted support for meter reading and billing-related field activities.</p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('field-ops', 'objective')">Objective</button>
+            <button class="tab-btn" onclick="switchTab('field-ops', 'workplan')">Work Plan</button>
+            <button class="tab-btn" onclick="switchTab('field-ops', 'outcome')">Expected Outcome</button>
+        </div>
+
+        <div id="field-ops-objective" class="tab-content active">
+            <p>To maintain uninterrupted support for meter reading and billing-related field activities.</p>
+        </div>
+
+        <div id="field-ops-workplan" class="tab-content">
+            <ul>
+                <li>Maintenance of spare rugged meter reading devices</li>
+                <li>Spare portable printers and accessories</li>
+                <li>Ongoing support for meter reading software</li>
+            </ul>
+            <p><em>These items serve as contingency support to prevent operational disruption in case of equipment
+                    failure.</em></p>
+        </div>
+
+        <div id="field-ops-outcome" class="tab-content">
+            <ul>
+                <li>Reduced risk of meter reading delays</li>
+                <li>Sustained billing cycle continuity</li>
+                <li>Operational flexibility in the field</li>
+            </ul>
+        </div>
+
         <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
     </section>
 
-    <!-- SECTION: Disaster Communication Preparedness -->
+    <!-- SECTION: Disaster -->
     <section id="disaster">
         <h1>Disaster Communication Preparedness</h1>
-        <p>To strengthen communication capability during major outages or emergency situations.</p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('disaster', 'objective')">Objective</button>
+            <button class="tab-btn" onclick="switchTab('disaster', 'workplan')">Work Plan</button>
+            <button class="tab-btn" onclick="switchTab('disaster', 'outcome')">Expected Outcome</button>
+            <button class="tab-btn" onclick="switchTab('disaster', 'notes')">Notes</button>
+        </div>
+
+        <div id="disaster-objective" class="tab-content active">
+            <p>To strengthen communication capability during major outages or emergency situations.</p>
+        </div>
+
+        <div id="disaster-workplan" class="tab-content">
+            <ul>
+                <li>Use of Starlink as an alternative connectivity option</li>
+                <li>Monitoring of connection performance</li>
+                <li>Coordination with management on emergency communication procedures</li>
+            </ul>
+        </div>
+
+        <div id="disaster-outcome" class="tab-content">
+            <ul>
+                <li>Enhanced communication capability during network disruptions</li>
+                <li>Additional layer of operational preparedness</li>
+            </ul>
+        </div>
+
+        <div id="disaster-notes" class="tab-content">
+            <p><strong>Important Clarification:</strong> This initiative provides communication redundancy and risk
+                mitigation but does not eliminate all external connectivity risks.</p>
+        </div>
+
         <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
     </section>
 
-    <!-- SECTION: ICT Capability Development -->
+    <!-- SECTION: ICT Capability -->
     <section id="ict-capability">
-        <h1>ICT Capability Development & Monitoring</h1>
-        <p>To gradually enhance internal ICT technical capability and monitoring support.</p>
+        <h1>ICT Capability Development</h1>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('ict-capability', 'objective')">Objective</button>
+            <button class="tab-btn" onclick="switchTab('ict-capability', 'workplan')">Work Plan</button>
+            <button class="tab-btn" onclick="switchTab('ict-capability', 'outcome')">Expected Outcome</button>
+        </div>
+
+        <div id="ict-capability-objective" class="tab-content active">
+            <p>To gradually enhance internal ICT technical capability and monitoring support.</p>
+        </div>
+
+        <div id="ict-capability-workplan" class="tab-content">
+            <ul>
+                <li>Utilization of development tools to support internal system improvements</li>
+            </ul>
+        </div>
+
+        <div id="ict-capability-outcome" class="tab-content">
+            <ul>
+                <li>Improved responsiveness to system issues</li>
+                <li>Gradual reduction in reliance on external service providers</li>
+                <li>Strengthened internal technical capacity</li>
+            </ul>
+        </div>
+
         <button class="btn btn-secondary" onclick="showSection('key-focus-areas')">Back</button>
     </section>
 
