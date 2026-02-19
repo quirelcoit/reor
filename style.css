@@ -238,35 +238,95 @@ li::before {
     line-height: 1.1;
 }
 
-/* TV Media Queries */
-@media (max-aspect-ratio: 16/10) {
+/* Mobile & Tablet Adjustments */
+@media (max-width: 1024px) {
+    section {
+        padding: 5vh 6vw;
+    }
+
+    h1 {
+        font-size: clamp(36px, 6vh, 64px);
+        margin-bottom: 3vh;
+    }
+
+    p {
+        font-size: clamp(20px, 3vh, 32px);
+    }
+
+    li {
+        font-size: clamp(18px, 2.8vh, 30px);
+    }
+
     .grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh 2vw;
+    }
+
+    .thank-you {
+        font-size: clamp(60px, 10vh, 120px);
     }
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        /* Allow scroll on small screens */
+    }
+
     section {
-        padding: 5vh 5vw;
+        height: auto;
+        min-height: 100vh;
+        padding: 10vh 8vw 8vh 8vw;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 2.5vh;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 2vh;
+    }
+
+    li {
+        font-size: 18px;
+        margin-bottom: 1.5vh;
+        padding-left: 30px;
     }
 
     .grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        gap: 2vh;
+        max-height: none;
     }
 
-    h1 {
-        font-size: 40px;
+    .card {
+        padding: 3vh 5vw;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-nav {
+        top: 2.5vh;
+        left: 8vw;
+        font-size: 14px;
+    }
+
+    .home-nav svg {
+        width: 3vh;
+        height: 3vh;
     }
 
     .thank-you {
-        font-size: 3.5rem;
+        font-size: 48px;
+        margin-top: 5vh;
     }
-
-    body {
-        overflow-y: auto;
-    }
-
-    /* Allow scroll on touch/mobile for safety */
 }
