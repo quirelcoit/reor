@@ -276,48 +276,53 @@ li::before {
     section {
         height: auto;
         min-height: 100vh;
-        padding: 10vh 8vw 8vh 8vw;
+        padding: 12vh 8vw 10vh 8vw;
+        /* Increased top padding for home-nav */
         justify-content: flex-start;
+        overflow-y: visible;
+        /* Allow content to grow */
     }
 
     h1 {
         font-size: 32px;
-        margin-bottom: 2.5vh;
-    }
-
-    p {
-        font-size: 18px;
-        margin-bottom: 2vh;
-    }
-
-    li {
-        font-size: 18px;
-        margin-bottom: 1.5vh;
-        padding-left: 30px;
+        margin-top: 2vh;
+        /* Push title down slightly */
+        margin-bottom: 3vh;
     }
 
     .grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 2vh;
+        gap: 3vh;
+        /* More breathing room */
         max-height: none;
+        margin-bottom: 4vh;
+        /* Ensure space before the button */
     }
 
     .card {
-        padding: 3vh 5vw;
+        padding: 4vh 6vw;
+        /* More internal breathing room */
     }
 
     .btn {
-        padding: 15px 30px;
+        margin-top: 2vh;
+        padding: 18px 30px;
         font-size: 16px;
         width: 100%;
         text-align: center;
     }
 
     .home-nav {
-        top: 2.5vh;
+        top: 3vh;
         left: 8vw;
+        background: rgba(248, 250, 252, 0.9);
+        /* Opaque background for reliability */
+        padding: 0.5vh 2vw;
+        border-radius: 4px;
         font-size: 14px;
+        opacity: 0.8;
+        /* More visible on mobile */
     }
 
     .home-nav svg {
