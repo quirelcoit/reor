@@ -276,8 +276,8 @@ li::before {
     section {
         height: auto;
         min-height: 100vh;
-        padding: 12vh 8vw 10vh 8vw;
-        /* Increased top padding for home-nav */
+        padding: 14vh 8vw 10vh 8vw;
+        /* More space for the top bar */
         justify-content: flex-start;
         overflow-y: visible;
         /* Allow content to grow */
@@ -285,53 +285,64 @@ li::before {
 
     h1 {
         font-size: 32px;
-        margin-top: 2vh;
-        /* Push title down slightly */
+        margin-top: 0;
+        /* Reset margin since padding is enough */
         margin-bottom: 3vh;
     }
 
     .grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 3vh;
-        /* More breathing room */
+        gap: 2.5vh;
+        /* Balanced spacing */
         max-height: none;
-        margin-bottom: 4vh;
+        margin-bottom: 5vh;
         /* Ensure space before the button */
     }
 
     .card {
-        padding: 4vh 6vw;
-        /* More internal breathing room */
+        padding: 3.5vh 5vw;
+        /* Optimized for small screens */
     }
 
     .btn {
-        margin-top: 2vh;
-        padding: 18px 30px;
+        margin-top: 1vh;
+        padding: 16px 24px;
         font-size: 16px;
         width: 100%;
         text-align: center;
     }
 
     .home-nav {
-        top: 3vh;
-        left: 8vw;
-        background: rgba(248, 250, 252, 0.9);
-        /* Opaque background for reliability */
-        padding: 0.5vh 2vw;
-        border-radius: 4px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 9vh;
+        min-height: 60px;
+        background: rgba(248, 250, 252, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 0 8vw;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        z-index: 2000;
+        display: none;
+        /* Controlled by JS */
+        align-items: center;
+        gap: 3vw;
         font-size: 14px;
-        opacity: 0.8;
-        /* More visible on mobile */
+        opacity: 1 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
     }
 
     .home-nav svg {
-        width: 3vh;
-        height: 3vh;
+        width: 24px;
+        height: 24px;
     }
 
     .thank-you {
         font-size: 48px;
         margin-top: 5vh;
     }
+}
 }
